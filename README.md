@@ -22,19 +22,34 @@ https://www.advantageonlineshopping.com/
 - order Management
 - Api
 
-## Folder Structure
+## Framework Directory Map
 
+```text
 capstone-project-playwright/
 ├── .github/
 │   └── workflows/
 │       └── playwright.yml
 ├── node_modules/
 ├── pages/
+│   ├── LoginPage.ts
+│   ├── HomePage.ts
+│   ├── ProductPage.ts
+│   ├── CartPage.ts
+│   └── CheckoutPage.ts
 ├── tests/
+│   ├── login.spec.ts
+│   ├── search.spec.ts
+│   ├── cart.spec.ts
+│   └── checkout.spec.ts
+├── utils/
+├── test-data/
+├── screenshots/
 ├── playwright-report/
 ├── test-results/
 ├── playwright.config.ts
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
+
 
