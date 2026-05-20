@@ -24,13 +24,17 @@ https://www.advantageonlineshopping.com/
 
 ## Folder Structure
 
-project-root/
-│
-├── tests/
+capstone-project-playwright/
+├── .github/
+│   └── workflows/
+│       └── playwright.yml
+├── node_modules/
 ├── pages/
-├── utils/
-├── test-data/
+├── tests/
+├── playwright-report/
+├── test-results/
 ├── playwright.config.ts
 ├── package.json
+├── package-lock.json
 └── README.md
 
