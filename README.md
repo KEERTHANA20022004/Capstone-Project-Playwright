@@ -31,25 +31,21 @@ capstone-project-playwright/
 │       └── playwright.yml
 ├── node_modules/
 ├── pages/
-│   ├── LoginPage.ts
-│   ├── HomePage.ts
-│   ├── ProductPage.ts
-│   ├── CartPage.ts
-│   └── CheckoutPage.ts
 ├── tests/
-│   ├── login.spec.ts
-│   ├── search.spec.ts
-│   ├── cart.spec.ts
-│   └── checkout.spec.ts
 ├── utils/
 ├── test-data/
 ├── screenshots/
 ├── playwright-report/
 ├── test-results/
-├── playwright.config.ts
+├── playwright.config.js
 ├── package.json
 ├── package-lock.json
 └── README.md
 ```
+## Total Test Cases
 
+120+ Test Cases
 
+## Conclusion
+
+This project provides end-to-end automation testing of an e-commerce application using Playwright. It ensures better test coverage, reliability, and supports real-world QA automation practices.
