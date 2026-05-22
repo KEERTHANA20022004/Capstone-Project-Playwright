@@ -1,0 +1,23 @@
+{
+  "name": "capstone-project",
+  "version": "1.0.0",
+  "description": "This project focuses on automation testing of the Advantage Online Shopping website using Playwright.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KEERTHANA20022004/Capstone-Project-Playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KEERTHANA20022004/Capstone-Project-Playwright/issues"
+  },
+  "homepage": "https://github.com/KEERTHANA20022004/Capstone-Project-Playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1"
+  }
+}

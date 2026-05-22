@@ -1,28 +1,36 @@
 # Capstone Project - Playwright Automation Testing
 
-## Project Overview
-This project focuses on automation testing of the Advantage Online Shopping website using Playwright.
+##  Project Overview
+This project focuses on automation testing of the **OrangeHRM application** using Playwright.  
+It ensures end-to-end validation of core HR functionalities with reliable and scalable test automation.
 
-## Website
-https://www.advantageonlineshopping.com/
+---
+
+##  Website Under Test
+https://opensource-demo.orangehrmlive.com/
+
+---
 
 ## Technologies Used
 - Playwright
 - JavaScript
 - Node.js
 
-## Features Tested
-- User Registration
-- Login
-- Product Search
-- Add to Cart
-- Checkout
-- Wishlist
-- Profile Management
-- order Management
-- Api
+---
 
-## Framework Directory Map
+## Services Tested
+- User Login / Logout
+- Authentication (Positive & Negative Scenarios)
+- User Management (Admin Module)
+- Employee Management (PIM Module)
+- Leave Management
+- Time Tracking
+- Profile Management
+- API Testing (if applicable)
+
+---
+
+##  Framework Directory Structure
 
 ```text
 capstone-project-playwright/
@@ -30,7 +38,7 @@ capstone-project-playwright/
 │   └── workflows/
 │       └── playwright.yml
 ├── node_modules/
-├── pages/
+├── pom/
 ├── tests/
 ├── utils/
 ├── test-data/
@@ -41,11 +49,12 @@ capstone-project-playwright/
 ├── package.json
 ├── package-lock.json
 └── README.md
-```
-## Total Test Cases
+
+Total Test Cases
 
 120+ Test Cases
 
-## Conclusion
+Conclusion
 
-This project provides end-to-end automation testing of an e-commerce application using Playwright. It ensures better test coverage, reliability, and supports real-world QA automation practices.
+This project demonstrates end-to-end automation testing of the OrangeHRM application using Playwright.
+It improves test coverage, reduces manual effort, and ensures a scalable automation framework for real-world QA practices.
