@@ -50,11 +50,10 @@ capstone-project-playwright/
 ├── package-lock.json
 └── README.md
 
-Total Test Cases
+## Total Test Cases
 
 120+ Test Cases
 
-Conclusion
+## Conclusion
 
-This project demonstrates end-to-end automation testing of the OrangeHRM application using Playwright.
-It improves test coverage, reduces manual effort, and ensures a scalable automation framework for real-world QA practices.
+This project provides end-to-end automation testing of an e-commerce application using Playwright. It ensures better test coverage, reliability, and supports real-world QA automation practices.
