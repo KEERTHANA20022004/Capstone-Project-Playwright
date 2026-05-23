@@ -23,10 +23,7 @@ test.describe('OrangeHRM Logout Module', () => {
 
     await expect(page).toHaveURL(/login/);
 
-    await page.screenshot({
-      path: 'screenshots/auth/logout_success.png',
-      fullPage: true
-    });
+
   });
 
   test('Logout UI validation', async ({ page }) => {
