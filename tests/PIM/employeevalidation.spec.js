@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
-const LoginPage = require('../../pom/LoginPage');
-const PIMPage = require('../../pom/PIMPage');
+const LoginPage = require('../../pom/loginpage');
+const PIMPage = require('../../pom/PimPage');
 
 test.describe('PIM - Employee Validation Tests', () => {
 

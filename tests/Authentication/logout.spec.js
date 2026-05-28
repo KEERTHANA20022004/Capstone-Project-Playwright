@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const LoginPage = require('../../pom/LoginPage');
+const LoginPage = require('../../pom/loginpage');
 const DashboardPage = require('../../pom/DashboardPage');
 
 test.describe('OrangeHRM Logout Module', () => {
