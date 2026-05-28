@@ -102,5 +102,3 @@ jobs:
         publish_dir: allure-report
       continue-on-error: true
 
-
-      
