@@ -22,7 +22,7 @@ test.describe('PIM - Employee Validation Tests', () => {
 
   test('Verify Add Employee page loads correctly', async ({ page }) => {
 
-    await page.click('a:has-text("Add Employee")');
+    await page.click('a:has-text("Add Employees")');
 
     await expect(
       page.getByRole('heading', { name: 'Add Employee' })

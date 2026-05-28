@@ -19,7 +19,7 @@ class PIMPage {
     await this.page.click(this.pimMenu);
   }
 
-  // Search Employee
+
   async searchEmployeeByName(name) {
 
     // Fill Employee Name
