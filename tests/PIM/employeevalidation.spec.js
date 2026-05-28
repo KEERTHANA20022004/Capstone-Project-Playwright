@@ -31,10 +31,7 @@ test.describe('PIM - Employee Validation Tests', () => {
     await expect(page.locator('input[name="firstName"]')).toBeVisible();
     await expect(page.locator('input[name="lastName"]')).toBeVisible();
 
-    await page.screenshot({
-      path: 'screenshots/PIM/validation_addEmployee_page.png',
-      fullPage: true
-    });
+    
   });
 
   test('Validate required fields on submit', async ({ page }) => {
@@ -47,10 +44,7 @@ test.describe('PIM - Employee Validation Tests', () => {
       page.getByText('Required', { exact: true }).first()
     ).toBeVisible();
 
-    await page.screenshot({
-      path: 'screenshots/PIM/validation_required_fields.png',
-      fullPage: true
-    });
+    
   });
 
   test('Verify Cancel button returns to PIM page', async ({ page }) => {
@@ -65,10 +59,7 @@ test.describe('PIM - Employee Validation Tests', () => {
 
     await expect(page).toHaveURL(/viewEmployeeList/);
 
-    await page.screenshot({
-      path: 'screenshots/PIM/validation_cancel.png',
-      fullPage: true
-    });
+  
   });
 
   

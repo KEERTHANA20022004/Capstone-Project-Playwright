@@ -31,10 +31,7 @@ test.describe('PIM - Employee Search', () => {
       page.locator('.oxd-table-body')
     ).toBeVisible();
 
-    await page.screenshot({
-      path: 'screenshots/PIM/searchEmployeeByName.png',
-      fullPage: true
-    });
+    
   });
 
   test('Verify employee list page opens', async ({ page }) => {
@@ -45,10 +42,7 @@ test.describe('PIM - Employee Search', () => {
       page.locator('h5')
     ).toContainText('Employee Information');
 
-    await page.screenshot({
-      path: 'screenshots/PIM/employeeListPage.png',
-      fullPage: true
-    });
+    
   });
 
   test('Search employee with empty data', async ({ page }) => {
@@ -83,10 +77,7 @@ test('Reset employee search fields', async ({ page }) => {
     page.locator('(//input[@placeholder="Type for hints..."])[1]')
   ).toHaveValue('');
 
-  await page.screenshot({
-    path: 'screenshots/PIM/resetSearchFields.png',
-    fullPage: true
-  });
+
 });
 
 test('Verify search button visible', async ({ page }) => {
@@ -95,10 +86,7 @@ test('Verify search button visible', async ({ page }) => {
     page.locator('button[type="submit"]')
   ).toBeVisible();
 
-  await page.screenshot({
-    path: 'screenshots/PIM/searchButtonVisible.png',
-    fullPage: true
-  });
+ 
 });
 
 test('Verify reset button visible', async ({ page }) => {
@@ -107,10 +95,7 @@ test('Verify reset button visible', async ({ page }) => {
     page.locator('button:has-text("Reset")')
   ).toBeVisible();
 
-  await page.screenshot({
-    path: 'screenshots/PIM/resetButtonVisible.png',
-    fullPage: true
-  });
+ 
 });
 
 test('Verify employee table visible', async ({ page }) => {
@@ -119,10 +104,7 @@ test('Verify employee table visible', async ({ page }) => {
     page.locator('.oxd-table')
   ).toBeVisible();
 
-  await page.screenshot({
-    path: 'screenshots/PIM/employeeTableVisible.png',
-    fullPage: true
-  });
+  
 });
 
 test('Search employee using partial name', async ({ page }) => {
@@ -133,10 +115,7 @@ test('Search employee using partial name', async ({ page }) => {
     page.locator('.oxd-table-body')
   ).toBeVisible();
 
-  await page.screenshot({
-    path: 'screenshots/PIM/partialNameSearch.png',
-    fullPage: true
-  });
+ 
 });
 
 });

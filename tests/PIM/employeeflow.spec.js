@@ -30,10 +30,7 @@ test.describe('PIM - Employee Full Flow', () => {
 
     await expect(page.locator('.oxd-table-body')).toBeVisible();
 
-    await page.screenshot({
-      path: 'screenshots/PIM/flow_search.png',
-      fullPage: true
-    });
+  
   });
 
 });

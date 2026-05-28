@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const LoginPage = require('../../pom/LoginPage');
 const DashboardPage = require('../../pom/DashboardPage');
 
-test.describe('OrangeHRM Authentication Module', () => {
+test.describe('OrangeHRM Authentication', () => {
 
   let loginPage;
   let dashboardPage;
@@ -18,10 +18,7 @@ test.describe('OrangeHRM Authentication Module', () => {
 
     await expect(page).toHaveURL(/dashboard/);
     await expect(page.locator('h6')).toHaveText('Dashboard');
-     await page.screenshot({
-    path: 'screenshots/auth/login_success.png',
-    fullPage: true
-  });
+   
 });
 
 
@@ -30,10 +27,7 @@ test.describe('OrangeHRM Authentication Module', () => {
 
     await expect(page.locator('.oxd-alert-content-text'))
       .toContainText('Invalid credentials');
-      await page.screenshot({
-        path: 'screenshots/auth/login_invalid_password.png',
-        fullPage: true
-      });
+     
 
   });
 
@@ -50,10 +44,7 @@ test.describe('OrangeHRM Authentication Module', () => {
 
    await expect(page.locator('.oxd-input-field-error-message').first())
   .toHaveText('Required');
-    await page.screenshot({
-      path: 'screenshots/auth/login_empty_fields.png',
-      fullPage: true
-    });
+    
   });
 
   test(' Login with empty username', async ({ page }) => {
@@ -61,10 +52,7 @@ test.describe('OrangeHRM Authentication Module', () => {
 
     await expect(page.locator('.oxd-input-field-error-message'))
       .toContainText('Required');
-    await page.screenshot({
-      path: 'screenshots/auth/login_empty_username.png',
-      fullPage: true
-    });
+    
   });
 
   test(' Login with empty password', async ({ page }) => {
@@ -72,10 +60,7 @@ test.describe('OrangeHRM Authentication Module', () => {
 
     await expect(page.locator('.oxd-input-field-error-message'))
       .toContainText('Required');
-      await page.screenshot({
-        path: 'screenshots/auth/login_empty_password.png',
-        fullPage: true
-      });
+      
     });
 
 
@@ -83,16 +68,14 @@ test.describe('OrangeHRM Authentication Module', () => {
     await expect(page.locator('input[name="username"]')).toBeVisible();
     await expect(page.locator('input[name="password"]')).toBeVisible();
     await expect(page.locator('button[type="submit"]')).toBeVisible();
+    
    
   });
 
   test(' Login and Logout flow', async ({ page }) => {
     await loginPage.login('Admin', 'admin123');
-
     await expect(page).toHaveURL(/dashboard/);
-
     await dashboardPage.logout();
-
     await expect(page).toHaveURL(/login/);
    
   });

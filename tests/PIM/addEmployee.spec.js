@@ -1,4 +1,3 @@
-// tests/PIM/addEmployee.spec.js
 
 const { test, expect } = require('@playwright/test');
 const LoginPage = require('../../pom/LoginPage');
@@ -34,10 +33,7 @@ test.describe('PIM - Add Employee', () => {
 
 await expect(page.locator('.oxd-toast')).toContainText('Successfully Saved');
 
-await page.screenshot({
-  path: 'screenshots/PIM/addEmployee_success.png',
-  fullPage: true
-});
+
   });
  
 
@@ -59,40 +55,20 @@ test('Verify Cancel button navigates back', async ({ page }) => {
 
   await expect(page.locator('h6')).toContainText('PIM');
 
-  await page.screenshot({
-    path: 'screenshots/PIM/cancel_navigation.png',
-    fullPage: true
-  });
+ 
 });
 test('Add employee with only first name (negative case)', async ({ page }) => {
 
   await page.click('a:has-text("Add Employee")');
-
   await page.fill('input[name="firstName"]', 'John');
-
   await page.click('button[type="submit"]');
-
   await expect(
     page.getByText('Required', { exact: true }).first()
   ).toBeVisible();
 
-  await page.screenshot({
-    path: 'screenshots/PIM/onlyFirstName_validation.png',
-    fullPage: true
-  });
-});
-
- 
-
-
-  test('Cancel add employee form', async ({ page }) => {
-
-    await page.click('a:has-text("Add Employee")');
-    await page.click('button:has-text("Cancel")');
-
-  
-
-    
-  });
 
 });
+
+});
+
+

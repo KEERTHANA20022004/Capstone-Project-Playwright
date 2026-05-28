@@ -26,24 +26,18 @@ test.describe('OrangeHRM Logout Module', () => {
 
   });
 
-  test('Logout UI validation', async ({ page }) => {
+  test('Logout Functionality', async ({ page }) => {
 
     await page.click(dashboardPage.profileDropdown);
-
     await expect(page.locator(dashboardPage.logoutButton)).toBeVisible();
 
-    await page.screenshot({
-      path: 'screenshots/auth/logout_ui.png',
-      fullPage: true
-    });
+   
   });
 
   test('Session should end after logout', async ({ page }) => {
 
     await dashboardPage.logout();
-
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
-
     await expect(page).toHaveURL(/login/);
 
    

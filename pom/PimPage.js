@@ -1,4 +1,3 @@
-// pom/PIMPage.js
 
 class PIMPage {
 
