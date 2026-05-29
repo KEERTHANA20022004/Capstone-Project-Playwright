@@ -1,0 +1,248 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: PIM/addEmployee.spec.js >> PIM - Add Employee >> Add employee with only first name (negative case)
+- Location: tests/PIM/addEmployee.spec.js:60:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.fill: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('input[name="firstName"]')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - heading "PIM" [level=6] [ref=e114]
+        - link "Upgrade" [ref=e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e117] [cursor=pointer]: Upgrade
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img "profile picture" [ref=e126]
+              - paragraph [ref=e127]: srini K
+              - generic [ref=e128]: 
+      - navigation "Topbar Menu" [ref=e130]:
+        - list [ref=e131]:
+          - listitem [ref=e132] [cursor=pointer]:
+            - generic [ref=e133]:
+              - text: Configuration
+              - generic [ref=e134]: 
+          - listitem [ref=e135] [cursor=pointer]:
+            - link "Employee List" [ref=e136]:
+              - /url: "#"
+          - listitem [ref=e137] [cursor=pointer]:
+            - link "Add Employee" [ref=e138]:
+              - /url: "#"
+          - listitem [ref=e139] [cursor=pointer]:
+            - link "Reports" [ref=e140]:
+              - /url: "#"
+          - button "" [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]: 
+  - generic [ref=e144]:
+    - generic [ref=e147]:
+      - heading "Add Employee" [level=6] [ref=e148]
+      - separator [ref=e149]
+      - generic [ref=e150]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e157]:
+              - button "Choose File"
+              - generic [ref=e158]:
+                - generic [ref=e159]:
+                  - img "profile picture"
+                - button "" [ref=e160] [cursor=pointer]:
+                  - generic [ref=e161]: 
+            - paragraph [ref=e162]: "Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px"
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - generic [ref=e167]:
+                - generic [ref=e169]: Employee Full Name*
+                - generic [ref=e170]:
+                  - textbox "First Name" [ref=e173]
+                  - textbox "Middle Name" [ref=e176]
+                  - textbox "Last Name" [ref=e179]
+              - generic [ref=e182]:
+                - generic [ref=e184]: Employee Id
+                - textbox [ref=e186]: "0492"
+            - separator [ref=e187]
+            - generic [ref=e188]:
+              - paragraph [ref=e189]: Create Login Details
+              - checkbox [ref=e192]
+        - separator [ref=e194]
+        - generic [ref=e195]:
+          - paragraph [ref=e196]: "* Required"
+          - button "Cancel" [ref=e197] [cursor=pointer]
+          - button "Save" [ref=e198] [cursor=pointer]
+    - generic [ref=e199]:
+      - paragraph [ref=e200]: OrangeHRM OS 5.8
+      - paragraph [ref=e201]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e202]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | const { test, expect } = require('@playwright/test');
+  3  | const LoginPage = require('../../pom/LoginPage');
+  4  | const PIMPage = require('../../pom/PIMPage');
+  5  | 
+  6  | test.describe('PIM - Add Employee', () => {
+  7  | 
+  8  |   let loginPage;
+  9  |   let pimPage;
+  10 | 
+  11 |   test.beforeEach(async ({ page }) => {
+  12 | 
+  13 |     page.setDefaultTimeout(60000);
+  14 | 
+  15 |     loginPage = new LoginPage(page);
+  16 |     pimPage = new PIMPage(page);
+  17 | 
+  18 |     await loginPage.goto();
+  19 |     await loginPage.login('Admin', 'admin123');
+  20 | 
+  21 |     await pimPage.openPIM();
+  22 |   });
+  23 | 
+  24 |   test('Add employee successfully', async ({ page }) => {
+  25 | 
+  26 |     await page.click('a:has-text("Add Employee")');
+  27 | 
+  28 |     await page.fill('input[name="firstName"]', 'John');
+  29 |     await page.fill('input[name="middleName"]', 'David');
+  30 |     await page.fill('input[name="lastName"]', 'Smith');
+  31 | 
+  32 |     await page.click('button[type="submit"]');
+  33 | 
+  34 | await expect(page.locator('.oxd-toast')).toContainText('Successfully Saved');
+  35 | 
+  36 | 
+  37 |   });
+  38 |  
+  39 | 
+  40 | test('Verify Add Employee page fields visible', async ({ page }) => {
+  41 | 
+  42 |   await page.click('a:has-text("Add Employee")');
+  43 | 
+  44 |   await expect(page.locator('input[name="firstName"]')).toBeVisible();
+  45 |   await expect(page.locator('input[name="middleName"]')).toBeVisible();
+  46 |   await expect(page.locator('input[name="lastName"]')).toBeVisible();
+  47 | 
+  48 | 
+  49 | });
+  50 | 
+  51 | test('Verify Cancel button navigates back', async ({ page }) => {
+  52 | 
+  53 |   await page.click('a:has-text("Add Employee")');
+  54 |   await page.click('button:has-text("Cancel")');
+  55 | 
+  56 |   await expect(page.locator('h6')).toContainText('PIM');
+  57 | 
+  58 |  
+  59 | });
+  60 | test('Add employee with only first name (negative case)', async ({ page }) => {
+  61 | 
+  62 |   await page.click('a:has-text("Add Employee")');
+> 63 |   await page.fill('input[name="firstName"]', 'John');
+     |              ^ Error: page.fill: Test timeout of 30000ms exceeded.
+  64 |   await page.click('button[type="submit"]');
+  65 |   await expect(
+  66 |     page.getByText('Required', { exact: true }).first()
+  67 |   ).toBeVisible();
+  68 | 
+  69 | 
+  70 | });
+  71 | 
+  72 | });
+  73 | 
+  74 | 
+  75 | 
+```
