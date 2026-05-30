@@ -19,11 +19,6 @@ test('My Info', async ({ page }) => {
 test('Salary', async ({ page }) => {
     await page.getByRole('link', { name: 'Salary' }).click();   
 });
-
-test('Tax Exemptions', async ({ page }) => {
-    await page.getByRole('link', { name: 'Tax Exemptions' }).click();   
-});
-
 test('Dependents', async ({ page }) => {
     await page.getByRole('link', { name: 'Dependents' }).click();   
     await page.getByRole('button', { name: ' Add' }).nth(1).click();});
@@ -39,3 +34,5 @@ test('Memberships', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewMemberships/empNumber/7');
     await page.getByRole('button', { name: ' Add' }).first().click();   });
 });
+
+

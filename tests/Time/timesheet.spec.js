@@ -43,33 +43,3 @@ test('to validate the timesheet', async ({ page }) => {
 
 });
 
-
-// import { test, expect } from '@playwright/test';
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-//   await page.getByRole('link', { name: 'Time' }).click();
-//   await page.getByText('Reports').click();
-//   await page.getByRole('menuitem', { name: 'Project Reports' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Reports').click();
-//   await page.getByRole('menuitem', { name: 'Employee Reports' }).click();
-//   await page.getByRole('button', { name: 'View' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Reports').click();
-//   await page.getByRole('listitem').filter({ hasText: /^Attendance Summary$/ }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Reports').click();
-//   await page.getByRole('menuitem', { name: 'Project Reports' }).click();
-//   await page.getByRole('textbox', { name: 'Type for hints...' }).click();
-//   await page.getByRole('textbox', { name: 'Type for hints...' }).fill('co');
-//   await page.getByText('The Coca-Cola Company - Coke - Phase').click();
-//   await page.locator('.oxd-icon.bi-calendar').first().click();
-//   await page.locator('.oxd-calendar-selector-year-selected > .oxd-icon').click();
-//   await page.getByText('2025').click();
-//   await page.getByText('14').click();
-//   await page.locator('div:nth-child(2) > .oxd-input-group > div:nth-child(2) > .oxd-date-wrapper > .oxd-date-input > .oxd-icon').click();
-//   await page.getByText('Today').click();
-//   await page.getByRole('button', { name: 'View' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Project Info').click();
-//   await page.getByRole('menuitem', { name: 'Customers' }).click();
-//   await page.getByRole('listitem').filter({ hasText: 'Attendance' }).click();
-//   await page.getByRole('listitem').filter({ hasText: /^Punch In\/Out$/ }).click();
-// });
