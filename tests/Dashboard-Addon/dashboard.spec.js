@@ -80,32 +80,3 @@ test.describe('Dashboard Module Tests', () => {
 
   });
 
-
-
-
-//   import { test, expect } from '@playwright/test';
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-//   const page2Promise = page.waitForEvent('popup');
-//   await page.getByTitle('Help').click();
-//   const page2 = await page2Promise;
-//   await page2.getByRole('link', { name: 'Admin User Guide' }).click();
-//   await page2.getByRole('link', { name: 'See all 7 articles' }).first().click();
-//   await page2.getByRole('link', { name: 'Employee User Guide' }).click();
-//   await page2.goto('https://starterhelp.orangehrm.com/hc/en-us');
-//   await page2.getByRole('link', { name: 'Mobile App' }).click();
-//   await page2.goto('https://starterhelp.orangehrm.com/hc/en-us');
-//   await page2.getByRole('link', { name: 'AWS Guide' }).click();
-//   await page2.getByRole('link', { name: 'FAQs' }).click();
-//   await page2.getByRole('searchbox', { name: 'Search' }).click();
-//   await page.getByText('Employee Distribution by Location').click();
-//   await page.getByText('Texas R&D').click();
-//   await page.getByText('Texas R&D').click();
-//   await page.getByText('Unassigned').nth(1).click();
-//   await page.locator('.oxd-icon.bi-gear-fill').click();
-//   await page.getByText('Employees on Leave Today').click();
-//   await page.getByText('Quick Launch').click();
-//   await page.getByRole('button', { name: 'Assign Leave' }).click();
-//   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index');
-// });

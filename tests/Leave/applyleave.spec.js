@@ -67,18 +67,3 @@ test('holiday check', async ({ page }) => {
 
 });
 
-// import { test, expect } from '@playwright/test';
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
-//   await page.getByText('Attendance').click();
-//   await page.getByRole('menuitem', { name: 'Employee Records' }).click();
-//   await page.getByText('Project Info').click();
-//   await page.getByRole('menuitem', { name: 'Projects' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Configure').click();
-//   await page.getByRole('menuitem', { name: 'Leave Types' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Configure').click();
-//   await page.getByRole('menuitem', { name: 'Leave Period' }).click();
-//   await page.getByLabel('Topbar Menu').getByText('Configure').click();
-//   await page.getByRole('listitem').filter({ hasText: /^Work Week$/ }).click();
-// });

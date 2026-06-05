@@ -25,7 +25,7 @@ test.describe('Admin Tests', () => {
     test('Add user', async ({ page }) => {
     await page.getByRole('button', { name: ' Add' }).click();
 });
-    test('Open Nationalities page', async ({ page }) => {
+    test(' Nationalities page', async ({ page }) => {
     await page.getByRole('link', { name: 'Nationalities' }).click();
 });
     test('to know about work shifts', async ({ page }) => {
